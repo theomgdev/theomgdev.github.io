@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Hermes Agent</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 44rem; margin: 0 auto; padding: 3rem 1.5rem 5rem;
+    line-height: 1.65; font-size: 17px;
+  }
+  h1 { font-size: 1.9rem; margin-bottom: .25rem; }
+  .sub { opacity: .7; margin-top: 0; }
+  h2 { margin-top: 2.5rem; font-size: 1.15rem; }
+  ul { padding-left: 1.3rem; }
+  li { margin: .45rem 0; }
+  code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .9em; }
+  footer { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(128,128,128,.3); opacity: .8; font-size: .92rem; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="sub">Hermes Agent · last updated 3 October 2026</p>
+
+<p>
+  This policy describes how the application <strong>Hermes Agent</strong> accesses, uses,
+  stores and shares Google user data. Hermes Agent is a personal, single-user assistant
+  run by Cahit Karahan on his own computer. The only Google Account it is authorized
+  against is the operator's own account, <code>cksoftwaresystems@gmail.com</code>.
+</p>
+
+<h2>Who is the data subject</h2>
+
+<p>
+  The operator and the user are the same person. This application has no other users and
+  does not accept sign-ups. It therefore processes only the operator's own Google data,
+  at the operator's own request.
+</p>
+
+<h2>What data is accessed, and why</h2>
+
+<ul>
+  <li><strong>Gmail messages and metadata</strong> (<code>gmail.readonly</code>,
+      <code>gmail.modify</code>, <code>gmail.send</code>) — to list, read, search,
+      label, archive, draft, send and reply to mail in the operator's own mailbox when
+      the operator asks the assistant to do so.</li>
+  <li><strong>Calendar events</strong> (<code>calendar</code>) — to read the operator's
+      schedule for daily briefings and to create, modify or delete the operator's own
+      events on request.</li>
+  <li><strong>Drive files, Docs and Sheets</strong> (<code>drive</code>,
+      <code>documents</code>, <code>spreadsheets</code>) — to read, create and edit the
+      operator's own files as part of document and data automation tasks.</li>
+  <li><strong>Contacts</strong> (<code>contacts.readonly</code>) — to resolve a contact's
+      email address or phone number when the operator asks the assistant to contact
+      someone.</li>
+</ul>
+
+<h2>How the data is used</h2>
+
+<p>
+  Data is fetched on demand, used to carry out the task the operator requested in that
+  session, and then discarded from working memory when the session ends. Message and
+  document contents are processed only to produce the output the operator asked for —
+  for example a summary of the inbox, a drafted reply, or an edited spreadsheet.
+</p>
+
+<h2>How the data is stored</h2>
+
+<ul>
+  <li><strong>OAuth tokens</strong> are stored on the operator's local disk, in
+      <code>%LOCALAPPDATA%\hermes\google_token.json</code>, readable only by the
+      operator's own Windows user account. They are transmitted only to Google's OAuth
+      and API endpoints.</li>
+  <li><strong>Google user data is not copied into any database or cloud store.</strong>
+      It is held in process memory for the duration of a task. Where the operator
+      explicitly asks for a file to be saved (for example "export this to a
+      spreadsheet"), the resulting file is written to the operator's own local disk.</li>
+  <li><strong>No analytics, telemetry or tracking</strong> of Google user data takes
+      place.</li>
+</ul>
+
+<h2>How the data is shared</h2>
+
+<p>
+  Google user data is <strong>not sold, rented, traded or shared with any third party</strong>
+  for advertising, marketing, credit assessment, or model training purposes.
+</p>
+
+<p>
+  One disclosure case exists and is stated plainly: Hermes Agent is driven by a large
+  language model, so the text of a task — which may include the content of a mail
+  message, calendar entry or document the operator asked about — is sent to the model
+  provider in order to generate the response. The operator configures which provider is
+  used. No other recipient receives Google user data.
+</p>
+
+<h2>Limited use</h2>
+
+<p>
+  This application's use of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API
+  Services User Data Policy</a>, including the Limited Use requirements. Specifically,
+  Google user data is used only to provide and improve the features the operator
+  requested, is not transferred to others except as required to operate those features,
+  is not used for advertising, and is not read by any human other than the operator.
+</p>
+
+<h2>Retention and deletion</h2>
+
+<p>
+  No long-term copy of Google user data is retained. Authorization can be withdrawn at
+  any time by the operator from
+  <a href="https://myaccount.google.com/permissions">Google Account permissions</a>, or
+  locally by deleting the stored token file, which immediately and permanently ends all
+  access.
+</p>
+
+<h2>Changes</h2>
+
+<p>
+  If the way this application uses Google user data changes, this page is updated with a
+  new revision date before the change takes effect.
+</p>
+
+<h2>Contact</h2>
+
+<p>
+  Cahit Karahan —
+  <a href="mailto:cksoftwaresystems@gmail.com">cksoftwaresystems@gmail.com</a>
+</p>
+
+<footer>
+  <a href="./index.html">← Hermes Agent</a>
+</footer>
+
+</body>
+</html>
