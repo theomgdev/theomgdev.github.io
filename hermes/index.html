@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Hermes Agent — personal automation assistant</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 44rem; margin: 0 auto; padding: 3rem 1.5rem 5rem;
+    line-height: 1.65; font-size: 17px;
+  }
+  h1 { font-size: 2rem; margin-bottom: .25rem; }
+  .sub { opacity: .7; margin-top: 0; }
+  h2 { margin-top: 2.5rem; font-size: 1.2rem; }
+  ul { padding-left: 1.3rem; }
+  li { margin: .4rem 0; }
+  code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .9em; }
+  footer { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(128,128,128,.3); opacity: .8; font-size: .92rem; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+
+<h1>Hermes Agent</h1>
+<p class="sub">A personal, self-hosted automation assistant operated by Cahit Karahan.</p>
+
+<p>
+  Hermes Agent is an AI assistant that runs locally on my own computer. I use it as a
+  working tool: it reads and writes files, runs shell commands, drives a browser, and
+  calls APIs on my behalf so that I can automate parts of my own software engineering
+  and personal admin work.
+</p>
+
+<p>
+  This is a single-user application. It is not a product, not a service, and it is not
+  offered to other people. The only account it accesses is my own.
+</p>
+
+<h2>What it does with Google services</h2>
+
+<p>
+  Hermes Agent connects to my own Google Account through Google's OAuth 2.0 flow, which
+  I authorize manually on Google's consent screen. It uses that access for these tasks:
+</p>
+
+<ul>
+  <li><strong>Gmail</strong> — read my inbox so the assistant can summarize and triage it,
+      search my own mail history for context, and send or reply to messages when I
+      explicitly ask it to.</li>
+  <li><strong>Google Calendar</strong> — read my schedule for daily briefings, and create
+      or remove events when I ask.</li>
+  <li><strong>Google Drive, Docs and Sheets</strong> — read, create and edit my own
+      documents and spreadsheets as part of automation tasks.</li>
+  <li><strong>Google Contacts</strong> — look up a contact's address or phone number when
+      I ask the assistant to reach someone.</li>
+</ul>
+
+<p>
+  Every one of these actions is initiated by me, in a chat session with the assistant,
+  on my own machine.
+</p>
+
+<h2>Where it runs</h2>
+
+<p>
+  The assistant runs on my personal computer. OAuth tokens are stored in a local
+  configuration directory on that machine
+  (<code>%LOCALAPPDATA%\hermes\</code>) and are never transmitted anywhere except to
+  Google's own API endpoints. There is no server component, no shared backend, and no
+  other user.
+</p>
+
+<h2>Privacy</h2>
+
+<p>
+  How this application accesses, uses, stores and shares Google user data is described
+  in full here: <a href="./privacy.html">Privacy Policy</a>.
+</p>
+
+<footer>
+  Operated by Cahit Karahan ·
+  <a href="mailto:cksoftwaresystems@gmail.com">cksoftwaresystems@gmail.com</a> ·
+  <a href="https://github.com/theomgdev">github.com/theomgdev</a><br>
+  <a href="./privacy.html">Privacy Policy</a>
+</footer>
+
+</body>
+</html>

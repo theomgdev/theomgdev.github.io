@@ -3,87 +3,66 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hermes Agent — personal automation assistant</title>
+<title>Cahit Karahan — Software Engineer</title>
+<meta name="description" content="Cahit Karahan — senior full-stack software engineer. Systems, AI architectures, game development.">
 <style>
   :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    max-width: 44rem; margin: 0 auto; padding: 3rem 1.5rem 5rem;
-    line-height: 1.65; font-size: 17px;
+    max-width: 42rem; margin: 0 auto; padding: 5rem 1.5rem 6rem;
+    line-height: 1.7; font-size: 17px;
   }
-  h1 { font-size: 2rem; margin-bottom: .25rem; }
-  .sub { opacity: .7; margin-top: 0; }
-  h2 { margin-top: 2.5rem; font-size: 1.2rem; }
-  ul { padding-left: 1.3rem; }
-  li { margin: .4rem 0; }
-  code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .9em; }
-  footer { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(128,128,128,.3); opacity: .8; font-size: .92rem; }
-  a { color: inherit; }
+  h1 { font-size: 2.1rem; margin: 0 0 .3rem; letter-spacing: -.02em; }
+  .role { opacity: .65; margin: 0 0 2.5rem; font-size: 1.05rem; }
+  h2 { font-size: .8rem; text-transform: uppercase; letter-spacing: .09em;
+       opacity: .55; margin: 2.8rem 0 .9rem; font-weight: 600; }
+  p { margin: .9rem 0; }
+  ul { padding-left: 0; list-style: none; margin: .5rem 0; }
+  li { margin: .7rem 0; }
+  li strong { font-weight: 600; }
+  li span { opacity: .7; }
+  a { color: inherit; text-decoration-color: rgba(128,128,128,.45);
+      text-underline-offset: .18em; }
+  a:hover { text-decoration-color: currentColor; }
+  footer { margin-top: 3.5rem; padding-top: 1.6rem;
+           border-top: 1px solid rgba(128,128,128,.25);
+           font-size: .93rem; opacity: .75; }
 </style>
 </head>
 <body>
 
-<h1>Hermes Agent</h1>
-<p class="sub">A personal, self-hosted automation assistant operated by Cahit Karahan.</p>
+<h1>Cahit Karahan</h1>
+<p class="role">Senior full-stack software engineer · Ankara, Türkiye</p>
 
 <p>
-  Hermes Agent is an AI assistant that runs locally on my own computer. I use it as a
-  working tool: it reads and writes files, runs shell commands, drives a browser, and
-  calls APIs on my behalf so that I can automate parts of my own software engineering
-  and personal admin work.
+  I have been writing software since I was twelve. I work across the stack —
+  product engineering, systems and tooling — and I spend my own time on
+  machine-learning architectures and on a long-running C++ game project.
 </p>
 
-<p>
-  This is a single-user application. It is not a product, not a service, and it is not
-  offered to other people. The only account it accesses is my own.
-</p>
-
-<h2>What it does with Google services</h2>
-
-<p>
-  Hermes Agent connects to my own Google Account through Google's OAuth 2.0 flow, which
-  I authorize manually on Google's consent screen. It uses that access for these tasks:
-</p>
-
+<h2>Selected work</h2>
 <ul>
-  <li><strong>Gmail</strong> — read my inbox so the assistant can summarize and triage it,
-      search my own mail history for context, and send or reply to messages when I
-      explicitly ask it to.</li>
-  <li><strong>Google Calendar</strong> — read my schedule for daily briefings, and create
-      or remove events when I ask.</li>
-  <li><strong>Google Drive, Docs and Sheets</strong> — read, create and edit my own
-      documents and spreadsheets as part of automation tasks.</li>
-  <li><strong>Google Contacts</strong> — look up a contact's address or phone number when
-      I ask the assistant to reach someone.</li>
+  <li>
+    <strong><a href="https://github.com/theomgdev/OdyssNet">OdyssNet</a></strong> —
+    <span>a neural architecture research library built around Hebbian plastic traces
+    and local learning rules, with a distributed hive-mind design.</span>
+  </li>
+  <li>
+    <strong><a href="https://github.com/theomgdev/Cataclysm-Signal">Cataclysm-Signal</a></strong> —
+    <span>a fork of Cataclysm: Dark Days Ahead focused on realism and logical
+    consistency.</span>
+  </li>
+  <li>
+    <strong><a href="https://github.com/theomgdev?tab=repositories">More repositories</a></strong> —
+    <span>experiments, web projects and tools.</span>
+  </li>
 </ul>
 
-<p>
-  Every one of these actions is initiated by me, in a chat session with the assistant,
-  on my own machine.
-</p>
-
-<h2>Where it runs</h2>
-
-<p>
-  The assistant runs on my personal computer. OAuth tokens are stored in a local
-  configuration directory on that machine
-  (<code>%LOCALAPPDATA%\hermes\</code>) and are never transmitted anywhere except to
-  Google's own API endpoints. There is no server component, no shared backend, and no
-  other user.
-</p>
-
-<h2>Privacy</h2>
-
-<p>
-  How this application accesses, uses, stores and shares Google user data is described
-  in full here: <a href="./privacy.html">Privacy Policy</a>.
-</p>
-
+<h2>Contact</h2>
 <footer>
-  Operated by Cahit Karahan ·
   <a href="mailto:cksoftwaresystems@gmail.com">cksoftwaresystems@gmail.com</a> ·
-  <a href="https://github.com/theomgdev">github.com/theomgdev</a><br>
-  <a href="./privacy.html">Privacy Policy</a>
+  <a href="https://github.com/theomgdev">github.com/theomgdev</a>
 </footer>
 
 </body>
